@@ -1,8 +1,12 @@
 # blazemeter
 
-> A Vue.js project that is part of Blazemeter interview - Please open server with port 3003
+> A Vue.js project that is part of Blazemeter interview
 
 ## Build Setup
+
+Server - port 3003
+
+node server.js
 
 ``` bash
 # install dependencies
