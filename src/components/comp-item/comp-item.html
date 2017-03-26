@@ -1,0 +1,12 @@
+<div class="compItems">
+    <div class="compItems-item" v-for="item of items">
+        <div class="firstRow">
+            <div>{{checkName(item)}}</div>
+            <div>{{returnDate(item.updated)}}</div>
+        </div>
+        <div class="secondRow">
+            <div class="location">{{item.location}}</div>
+            <div>{{returnTime(item.updated)}}</div>
+        </div>
+    </div>
+</div>

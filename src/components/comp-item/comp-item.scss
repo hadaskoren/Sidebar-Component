@@ -1,0 +1,32 @@
+$primary-color: grey;
+$secondary-color: #b4b0b0;
+
+.compItems {
+    overflow: scroll;
+    max-height: 90%;
+}
+
+.compItems-item {
+    height: 53px;
+    border-bottom: 1px solid grey;
+    padding: 8px 15px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+
+    .location {
+        font-size: 11px;
+        color: $secondary-color;
+    }
+}
+

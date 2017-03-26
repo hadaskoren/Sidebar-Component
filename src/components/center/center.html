@@ -1,0 +1,28 @@
+<div>
+    <section class="openSideBAr" v-if="!isShown">
+        <button @click="isShown = true, refreshItems()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </section>
+    <section class="center" ref="sidebarEl" v-else>
+        <div class="headline">
+        <div>
+            <label>Reports</label>
+            <label>{{listViewed().length}}</label>
+        </div>    
+        <div class="actions">
+            <div>
+                <i class="fa fa-repeat" aria-hidden="true" @click="refreshItems()"></i>
+            </div>
+            <div>
+                <i class="fa fa-times" aria-hidden="true" @click="isShown = false"></i>
+            </div>
+        </div>
+        </div>
+        <div class="search">
+            <input type="text" class="inputStyle" placeholder="search reports" @keyup="searchItems($event)" v-model="inputValue"></input>
+            <i class="fa fa-sort" aria-hidden="true" @click="sortItemsByDate()"></i>
+        </div>
+        <comp-item :items="listViewed()"></comp-item>
+    </section>
+</div>
